@@ -6,36 +6,75 @@
   </header>
 
   <div class="page-content">
-    <table>
 
-    </table>
+    
+    <input class="input-bar" type="text" onkeyup="receiveUserInput($event)" placeholder="Search for names..">
 
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Course Code</th>
+                <th>Course Number</th>
+                <th>Course Name</th>
+                <th>Average GPA</th>
+                <th>Difficulty Factor</th>
+                <th>Average Course Size</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let course of gradeData | keyvalue">
+            <td>{{course.value?.overview?.department ? course.value?.overview?.department : "N/A"}}</td>
+            <td>{{course.value?.overview?.coursePrefix}}</td>
+            <td>{{course.value?.overview?.courseNum}}</td>
+            <td>{{course.value?.overview?.courseTitle}}</td>
+            <td>{{course.value?.overview?.avgGPA}}</td>
+            <td>{{course.value?.overview?.difficulty}}</td>
+            <td>{{course.value?.overview?.avgSize}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <div class="tile-section">
+  
+    <!-- <div class="tile-section">
+      <div class="tile-wrapper">
+        <div class="tile-header">Hardest Majors</div>
+        <table></table>
+      </div>
+      <div class="tile-wrapper">
+        <div class="tile-header">Easiest Majors</div>
+        <table></table>
+      </div>
       <div class="tile-wrapper">
         <div class="tile-header">Hardest Courses</div>
         <table></table>
       </div>
-  
-  
-      <div class="tile-wrapper">
-        <div class="tile-header">Hardest Professors</div>
-        <table></table>
-      </div>
-  
       <div class="tile-wrapper">
         <div class="tile-header">Easiest Courses</div>
         <table></table>
       </div>
-  
-      <div class="tile-wrapper">
-        <div class="tile-header">Easiest Professors</div>
-        <table></table>
-      </div>
-
     </div>
 
-
+    <div class="tile-section">
+      <div class="tile-wrapper">
+        <div class="tile-header">Average GPA By Course</div>
+        <table></table>
+      </div>
+      <div class="tile-wrapper">
+        <div class="tile-header">Largest Courses</div>
+        <table></table>
+      </div>
+      <div class="tile-wrapper">
+        <div class="tile-header">Largest Courses</div>
+        <table></table>
+      </div>
+      <div class="tile-wrapper">
+        <div class="tile-header">Largest Courses</div>
+        <table></table>
+      </div>
+    </div> -->
 
   </div>
 
