@@ -18,12 +18,16 @@
     color: #1c1c1c;
 }
 .data-table thead tr {
-    background-image: -webkit-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
-    background-image: -o-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ddf7d9), to(#b7f2ad));
-    background-image: linear-gradient(to bottom, #ddf7d9 0, #b7f2ad 100%);
+    background-image: -webkit-linear-gradient(top, #ef9953 0, #BF5700 100%);
+    background-image: -o-linear-gradient(top, #ef9953 0, #BF5700 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9953), to(#BF5700));
+    background-image: linear-gradient(to bottom, #ef9953 0, #BF5700 100%);
+    // background-image: -webkit-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
+    // background-image: -o-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
+    // background-image: -webkit-gradient(linear, left top, left bottom, from(#ddf7d9), to(#b7f2ad));
+    // background-image: linear-gradient(to bottom, #ddf7d9 0, #b7f2ad 100%);
     background-repeat: repeat-x;
-    color: #000000;
+    color: #fff;
     border-bottom: 2px solid var(--gray-border-light);
     text-align: left;
 }
