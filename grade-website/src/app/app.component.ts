@@ -1,34 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms'
-import { CommonModule, KeyValuePipe } from '@angular/common';
-import * as GradeData from '../../public/assets/grades/results2023-2024.json';
-import { BrowserModule } from '@angular/platform-browser';
+import { Router, RouterOutlet } from '@angular/router';
 
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, KeyValuePipe, CommonModule, FormsModule],
+    imports: [RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     standalone: true
 })
 export class AppComponent implements OnInit {
 
-  gradeData: any = GradeData;
-  totalCourses: number = 0;
-  userInput: string = ""
-
-  infoBoxOpen: boolean = true;
-
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    // console.log("grade data: ", this.gradeData["SAB-300"])
-    this.totalCourses = Object.keys(this.gradeData)?.length
   }
 
-  closeAlert() {
-    this.infoBoxOpen = false
+  navigateFromMenu(navigationURL) {
+    this.router.navigate([navigationURL])
   }
+
+
 }

@@ -13,11 +13,35 @@
     align-items: center;
     border-bottom: 8px solid var(--gray-border);
 }
+.header-options-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 3vw;
+    gap: 3vw;
+}
+
+.header-option {
+    cursor: pointer;
+    padding: 8px;
+}
+.header-option:hover {
+    opacity: 0.9;
+    background-color: var(--utaustin-color-light);
+    border-radius: 8px;
+}
+.header-option:active {
+    transform: scale(0.97);
+}
 
 .header-title {
     font-size: 24px;
     margin-left: 40px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .page-content {

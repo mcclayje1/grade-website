@@ -2,7 +2,11 @@
 <div class="page-wrapper">
 
   <header class="page-header">
-    <div class="header-title">UT Austin Grades</div>
+    <div class="header-title" (click)="navigateFromMenu('home')">UT Austin Grades</div>
+    <div class="header-options-wrapper">
+      <div class="header-option" (click)="navigateFromMenu('about')">About</div>
+      <div class="header-option" (click)="navigateFromMenu('contact')">Contact</div>
+    </div>
   </header>
   <div class="page-content">
     <router-outlet></router-outlet>
