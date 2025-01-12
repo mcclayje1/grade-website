@@ -1,6 +1,7 @@
 
 .table-wrapper {
-    height: 500px;
+    height: 460px;
+    min-height: 460px;
     overflow: auto;
     margin-top: 15px;
     border-bottom: 4px solid var(--gray-border-light);
@@ -27,7 +28,6 @@
     text-align: left;
 }
 
-
 .data-table th,
 .data-table td {
     padding: 12px 15px;
@@ -40,24 +40,14 @@
     background-color: #f2f2f2;
 }
 .data-table tbody tr:nth-of-type(even) {
-    background-color: #f2f2f2;
+    background-color: #e8e8e8;
 }
 
-.data-table tbody tr:last-of-type {
-    // border-bottom: 2px solid var(--utaustin-color);
-}
-// .data-table tbody tr.active-row {
-//     font-weight: bold;
-//     color: #009879;
-// }
 tbody tr:hover {
     opacity: 0.92;
     color: var(--utaustin-color);
     cursor: pointer;
 }
-
-
-
 
 
 .close-button {
