@@ -1,0 +1,17 @@
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    height: 500px;
+}
+.about-description {
+    font-family: sans-serif;
+    font-weight: 400;
+    width: 80%;
+}
+.description-list {
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+}
