@@ -1,0 +1,43 @@
+
+<div class="component-wrapper">
+    <div class="page-content">
+      <div *ngIf="infoBoxOpen" class="info-box">
+        <div>Click on a row to view a courses' grade distribution breakdown</div>
+        <div (click)="closeAlert()" class="close-button">X</div>
+      </div>
+      
+      <div class="input-wrapper">
+        <img class="search-icon" src="assets/search-icon.png">
+        <input class="input-bar" type="text" [(ngModel)]="userInput" placeholder="Search course name...">
+      </div>
+  
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+              <tr>
+                  <th>Department</th>
+                  <th>Course Code</th>
+                  <th>Course Number</th>
+                  <th>Course Name</th>
+                  <th>Average GPA</th>
+                  <th>% Received an A</th>
+                  <th>Average Course Size</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let course of gradeData | keyvalue">
+              <td>{{course.value?.overview?.department ? course.value?.overview?.department : "N/A"}}</td>
+              <td>{{course.value?.overview?.coursePrefix}}</td>
+              <td>{{course.value?.overview?.courseNum}}</td>
+              <td>{{course.value?.overview?.courseTitle}}</td>
+              <td>{{course.value?.overview?.avgGPA}}</td>
+              <td>{{course.value?.overview?.difficulty}}</td>
+              <td>{{course.value?.overview?.avgSize}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+    </div>
+  
+  </div>

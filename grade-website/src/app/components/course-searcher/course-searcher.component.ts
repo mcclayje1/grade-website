@@ -2,19 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 import { CommonModule, KeyValuePipe } from '@angular/common';
-import * as GradeData from '../../public/assets/grades/results2023-2024.json';
+import * as GradeData from '../../../../public/assets/grades/results2023-2024.json';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 @Component({
-    selector: 'app-root',
-    imports: [RouterOutlet, KeyValuePipe, CommonModule, FormsModule],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
-    standalone: true
+  selector: 'app-course-searcher',
+  imports: [RouterOutlet, KeyValuePipe, CommonModule, FormsModule],
+  templateUrl: './course-searcher.component.html',
+  styleUrl: './course-searcher.component.scss',
+  standalone: true
 })
-export class AppComponent implements OnInit {
-
+export class CourseSearcherComponent {
   gradeData: any = GradeData;
   totalCourses: number = 0;
   userInput: string = ""
