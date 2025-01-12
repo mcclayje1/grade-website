@@ -16,14 +16,22 @@ export class AppComponent implements OnInit {
   title = 'grade-website';
 
   gradeData: any = GradeData;
+  totalCourses: number = 0;
+
+  infoBoxOpen: boolean = true;
 
   constructor() {}
 
   ngOnInit(): void {
     // console.log("grade data: ", this.gradeData["SAB-300"])
+    this.totalCourses = Object.keys(this.gradeData)?.length
   }
 
   receiveUserInput($event: any) {
     console.log("event: ", event)
+  }
+
+  closeAlert() {
+    this.infoBoxOpen = false
   }
 }

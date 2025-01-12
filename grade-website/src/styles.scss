@@ -5,10 +5,11 @@
     --utaustin-color: #BF5700;
     --gray-background: #dfdfdf;
     --gray-border: rgb(108, 108, 108);
+    --gray-border-light: rgb(209, 209, 209);
     --off-white: #f6f6f6;
 }
 
 body {
     margin: 0px;
-    background-color: green;
+    background-color: var(--utaustin-color);
 }
