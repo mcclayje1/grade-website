@@ -40,7 +40,6 @@
 .header-title {
     font-size: 26px;
     font-weight: 500;
-    cursor: pointer;
 }
 
 .heading-wrapper {
@@ -48,6 +47,7 @@
     align-items: center;
     margin-left: 40px;
     gap: 2px;
+    cursor: pointer;
     .bevo-icon {
         height: 72px;
         width: 72px;
@@ -63,3 +63,12 @@
     margin-top: 25px;
 }
 
+.footer-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #5a5a5a;
+    font-size: 14px;
+    font-style: italic;
+}

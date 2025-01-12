@@ -2,9 +2,9 @@
 <div class="page-wrapper">
 
   <header class="page-header">
-    <div class="heading-wrapper">
+    <div (click)="navigateFromMenu('home')" class="heading-wrapper">
       <img class="bevo-icon" src="assets/bevo-cartoon.png">
-      <div class="header-title" (click)="navigateFromMenu('home')">UT Austin Grades</div>
+      <div class="header-title">UT Austin Grades</div>
     </div>
     <div class="header-options-wrapper">
       <div class="header-option" (click)="navigateFromMenu('about')">About</div>
@@ -14,5 +14,8 @@
   <div class="page-content">
     <router-outlet></router-outlet>
   </div>
+  <footer>
+    <div class="footer-note">Note: UT Austin Grades uses public data sourced from the University of Texas Austin and is not affiliated with the college.</div>
+  </footer>
 
 </div>

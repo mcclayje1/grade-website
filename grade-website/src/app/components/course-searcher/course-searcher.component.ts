@@ -12,7 +12,7 @@ import { SearchPipe } from '../pipes/search-pipe';
   standalone: true
 })
 export class CourseSearcherComponent implements OnInit {
-  
+
   gradeData: any = GradeData;
 
   totalCourses: number = 0;
@@ -31,4 +31,7 @@ export class CourseSearcherComponent implements OnInit {
     this.infoBoxOpen = false
   }
 
+  navigateFromRowClick(courseID: string) {
+    // this.router
+  }
 }
