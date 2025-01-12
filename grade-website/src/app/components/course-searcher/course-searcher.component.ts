@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 import { CommonModule, KeyValuePipe } from '@angular/common';
 import * as GradeData from '../../../../public/assets/grades/results2023-2024.json';
-import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-course-searcher',
@@ -12,9 +11,14 @@ import { BrowserModule } from '@angular/platform-browser';
   styleUrl: './course-searcher.component.scss',
   standalone: true
 })
-export class CourseSearcherComponent {
+export class CourseSearcherComponent implements OnInit {
   gradeData: any = GradeData;
+  
   totalCourses: number = 0;
+  searchResults: number = 0;
+
+  currentCoursesFromSearch: number = 0;
+
   userInput: string = ""
 
   infoBoxOpen: boolean = true;
@@ -22,11 +26,21 @@ export class CourseSearcherComponent {
   constructor() {}
 
   ngOnInit(): void {
-    // console.log("grade data: ", this.gradeData["SAB-300"])
     this.totalCourses = Object.keys(this.gradeData)?.length
+    this.searchResults = this.totalCourses
   }
 
   closeAlert() {
     this.infoBoxOpen = false
   }
+
+  returnFilteredCourses() {
+    if (this.userInput) {
+      // let filteredResults = this.gradeData.filter((grade:any)=> ) // this.searchResults = Object.keys(this.gradeData)?.length
+      return this.gradeData.filter((grade: any) => {return })
+    }
+    this.searchResults = this.totalCourses
+    return this.gradeData
+  }
+
 }

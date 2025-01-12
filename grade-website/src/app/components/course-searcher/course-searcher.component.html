@@ -9,6 +9,7 @@
       <div class="input-wrapper">
         <img class="search-icon" src="assets/search-icon.png">
         <input class="input-bar" type="text" [(ngModel)]="userInput" placeholder="Search course name...">
+        <div class="results">Results: {{totalCourses | number}} Courses</div>
       </div>
   
       <div class="table-wrapper">

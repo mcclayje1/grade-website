@@ -38,10 +38,20 @@
 }
 
 .header-title {
-    font-size: 24px;
-    margin-left: 40px;
+    font-size: 26px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 2px;
+    .bevo-icon {
+        height: 72px;
+        width: 72px;
+    }
 }
 
 .page-content {
