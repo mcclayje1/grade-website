@@ -7,7 +7,7 @@
     <div class="overview-info">
         <div class="info">Average GPA: {{gradeData?.value?.overview?.avgGPA}}</div>
         <div class="info">Percent of Class Received A: {{gradeData?.value?.overview?.difficulty}}</div>
-        <div class="info">Average Course Size: {{gradeData?.value?.overview?.avgSize}}</div>
+        <div class="info">Average Course Size: {{gradeData?.value?.overview?.avgSize}} Students</div>
     </div>
     <div class="charts-wrapper">
           <canvas baseChart [data]="barChartData" [type]="barChartType" [options]="barChartOptions"></canvas>

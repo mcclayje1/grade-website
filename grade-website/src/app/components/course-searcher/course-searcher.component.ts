@@ -34,11 +34,32 @@ export class CourseSearcherComponent implements OnInit {
   }
 
   navigateFromRowClick(course: any) {
-    console.log("course: ", course)
     let courseCode: string = course.key.replace(" ", "")
     this.gradeHelperService.setSelectedCourse(course)
     if (courseCode) {
       this.router.navigate([`courses/${courseCode}`])
     }
   }
+
+  sortData(sortString: string) {
+    // Convert the object into an array of entries
+    const entries = Object.entries(this.gradeData);
+
+    // Sort the array based on avgGPA
+    entries.sort((a: any, b: any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
+
+    // Convert the array back into an object
+    return Object.fromEntries(entries);
+  }
+
+  sortByAvgGPA(data) {
+    const sortedEntries = Object.entries(this.gradeData).sort((a:any, b:any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
+    return new Map(sortedEntries);
+  }
+
+  sortTable(sortString: string) {
+    // let sorted = this.sortData(sortString)
+    // console.log("sorted: ", sorted)
+    // this.gradeData = sorted
+  } 
 }

@@ -1097,7 +1097,7 @@
     },
     "U D-696D": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "U D",
             "courseNum": "696D",
             "courseTitle": "URBN DESGN TERMINAL STUDIO",
@@ -40253,7 +40253,7 @@
     },
     "RBT-350": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "RBT",
             "courseNum": "350",
             "courseTitle": "GATEWAY TO ROBOTICS",
@@ -51022,7 +51022,7 @@
     },
     "P L-384E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "384E",
             "courseTitle": "1-POLITICS AND POLICYMAKING",
@@ -67307,7 +67307,7 @@
     },
     "A I-395T": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "395T",
             "courseTitle": "A I IN HEALTHCARE-WB",
@@ -67328,7 +67328,7 @@
     },
     "A I-394D": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "394D",
             "courseTitle": "DEEP LEARNING-WB",
@@ -67349,7 +67349,7 @@
     },
     "A I-389L": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "389L",
             "courseTitle": "AUTOMATED LOGICAL REASONING-WB",
@@ -67370,7 +67370,7 @@
     },
     "A I-391L": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "391L",
             "courseTitle": "MACHINE LEARNING-WB",
@@ -70457,7 +70457,7 @@
     },
     "P L-381E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "381E",
             "courseTitle": "3-PUBLIC LEADERSHIP ETHICS",
@@ -70478,7 +70478,7 @@
     },
     "P L-382E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "382E",
             "courseTitle": "1-STRTGC POLICY/PUBLIC COMM",
@@ -70499,7 +70499,7 @@
     },
     "P L-383E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "383E",
             "courseTitle": "1-FINCL MGMT DECISION-MAKERS",
@@ -77681,7 +77681,7 @@
     },
     "A I-W391L": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "W391L",
             "courseTitle": "MACHINE LEARNING-WB",
@@ -77702,7 +77702,7 @@
     },
     "A I-W394D": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "W394D",
             "courseTitle": "DEEP LEARNING-WB",
@@ -77723,7 +77723,7 @@
     },
     "A I-W394R": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "A I",
             "courseNum": "W394R",
             "courseTitle": "REINFRCMNT LEARN: THRY/PRAC-WB",
@@ -78983,7 +78983,7 @@
     },
     "P L-W383E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "W383E",
             "courseTitle": "2-DATA ANLYTCS/PROGRAM EVALTN",
@@ -79004,7 +79004,7 @@
     },
     "P L-W389E": {
         "overview": {
-            "department": "",
+            "department": "N/A",
             "coursePrefix": "P L",
             "courseNum": "W389E",
             "courseTitle": "RESEARCH CAPSTONE",
