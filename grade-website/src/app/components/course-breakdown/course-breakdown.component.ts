@@ -42,7 +42,6 @@ export class CourseBreakdownComponent implements OnInit {
     this.gradeHelperService.selectedCourse.subscribe((course: any) => {
       if (course) {
         this.gradeData = course
-        console.log("grade data: ", this.gradeData)
         this.updateChartData()
       }
     })
@@ -50,8 +49,6 @@ export class CourseBreakdownComponent implements OnInit {
   updateChartData() {
     for (const courseID in this.gradeData) {
       for (const semester in this.gradeData[courseID]["sems"]) {
-        console.log("semster: ", semester)
-        console.log("data: ", this.gradeData[courseID]["sems"][semester])
         this.barChartData["labels"].push(semester)
         this.barChartData["datasets"][0]["data"].push(this.gradeData[courseID]["sems"][semester]["A"])
         this.barChartData["datasets"][1]["data"].push(this.gradeData[courseID]["sems"][semester]["B"])
