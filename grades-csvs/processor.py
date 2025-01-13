@@ -52,9 +52,11 @@ def determine_course_size(semesters: object) -> int:
 
 def main():
 
-    grade_data: object = {}
+    with open('grade-results.json', 'r') as json_file:
+        grade_data = json.load(json_file)
+    # grade_data: object = {}
 
-    with open('utaustingrades2023-2024.csv', encoding="utf-8") as csv_file:
+    with open('utaustingrades2021-2022.csv', encoding="utf-8") as csv_file:
         reader = csv.reader(csv_file)
         next(reader) #skip header row
         for row in reader:
@@ -104,7 +106,7 @@ def main():
         json_object = json.dumps(grade_data, indent=4)
  
         # Writing to sample.json
-        with open("results.json", "w") as outfile:
+        with open("new-results.json", "w") as outfile:
             outfile.write(json_object)
         csv_file.close()
 
