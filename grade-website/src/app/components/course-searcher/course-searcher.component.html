@@ -2,8 +2,8 @@
 <div class="component-wrapper">
     <div class="page-content">
       <div *ngIf="infoBoxOpen" class="info-box">
-        <div>Click on a row to view a courses' grade distribution breakdown. Data is from all semsters since and including 2020.</div>
-        <div (click)="closeAlert()" class="close-button">X</div>
+        <div>Click on a row to view a courses' grade distribution breakdown. Data is from all semesters between and including Spring 2020 and Fall 2024.</div>
+        <!-- <div (click)="closeAlert()" class="close-button">X</div> -->
       </div>
       
       <div class="input-wrapper">
@@ -26,7 +26,7 @@
               </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let course of gradeData | keyvalue | search: userInput">
+            <tr *ngFor="let course of gradeData | keyvalue | search: userInput" (click)="navigateFromRowClick(course)">
               <td>{{course.value?.overview?.department ? course.value?.overview?.department : "N/A"}}</td>
               <td>{{course.value?.overview?.coursePrefix}}</td>
               <td>{{course.value?.overview?.courseNum}}</td>

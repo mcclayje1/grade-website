@@ -3,6 +3,8 @@ import { FormsModule } from '@angular/forms'
 import { CommonModule, KeyValuePipe } from '@angular/common';
 import * as GradeData from '../../../../public/assets/grades/results2023-2024.json';
 import { SearchPipe } from '../pipes/search-pipe';
+import { Router } from '@angular/router';
+import { GradeHelperService } from '../../services/grade-helper.service';
 
 @Component({
   selector: 'app-course-searcher',
@@ -21,7 +23,7 @@ export class CourseSearcherComponent implements OnInit {
   userInput: string = ""
   infoBoxOpen: boolean = true;
 
-  constructor() {}
+  constructor(private router: Router, private gradeHelperService: GradeHelperService) {}
 
   ngOnInit(): void {
     this.totalCourses = Object.keys(this.gradeData)?.length
@@ -31,7 +33,12 @@ export class CourseSearcherComponent implements OnInit {
     this.infoBoxOpen = false
   }
 
-  navigateFromRowClick(courseID: string) {
-    // this.router
+  navigateFromRowClick(course: any) {
+    console.log("course: ", course)
+    let courseCode: string = course.key.replace(" ", "")
+    this.gradeHelperService.setSelectedCourse(course)
+    if (courseCode) {
+      this.router.navigate([`courses/${courseCode}`])
+    }
   }
 }

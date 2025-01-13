@@ -1,7 +1,7 @@
 
 .table-wrapper {
-    height: 460px;
-    min-height: 460px;
+    height: 475px;
+    min-height: 475px;
     overflow: auto;
     margin-top: 15px;
     border-bottom: 4px solid var(--gray-border-light);
@@ -22,13 +22,8 @@
     background-image: -o-linear-gradient(top, #ef9953 0, #BF5700 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9953), to(#BF5700));
     background-image: linear-gradient(to bottom, #ef9953 0, #BF5700 100%);
-    // background-image: -webkit-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
-    // background-image: -o-linear-gradient(top, #ddf7d9 0, #b7f2ad 100%);
-    // background-image: -webkit-gradient(linear, left top, left bottom, from(#ddf7d9), to(#b7f2ad));
-    // background-image: linear-gradient(to bottom, #ddf7d9 0, #b7f2ad 100%);
     background-repeat: repeat-x;
     color: #fff;
-    // border-bottom: 2px solid var(--gray-border-light);
     text-align: left;
 }
 

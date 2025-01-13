@@ -1,0 +1,31 @@
+
+.course-breakdown-wrapper {
+    width: 100%;
+}
+.overview-header {
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+.back-button {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.charts-wrapper {
+    margin-top: 20px;
+}
+
+.chart-title {
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+.overview-info {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #303030;
+}

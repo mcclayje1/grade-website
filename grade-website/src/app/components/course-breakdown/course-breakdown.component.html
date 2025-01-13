@@ -1,18 +1,15 @@
-<div class="course-breakdown-wrapper">
 
+<div class="course-breakdown-wrapper">
     <div class="overview-header">
-        Course Overview
+        <img class="back-button" (click)="backButtonClicked()" src="assets/arrow-back.png">
+        <div class="chart-title">Course Overview: <b>{{gradeData?.key}}:{{gradeData?.value?.overview?.courseTitle}}</b></div>
+    </div>
+    <div class="overview-info">
+        <div class="info">Average GPA: {{gradeData?.value?.overview?.avgGPA}}</div>
+        <div class="info">Percent of Class Received A: {{gradeData?.value?.overview?.difficulty}}</div>
+        <div class="info">Average Course Size: {{gradeData?.value?.overview?.avgSize}}</div>
     </div>
     <div class="charts-wrapper">
-        <div>
-            <!-- <canvas id="myChart"></canvas> -->
-            <!-- <canvas baseChart
-                [data]="barChartData"
-                [type]="barChartType"
-                [options]="barChartOptions">
-            </canvas> -->
-            
-        </div>
+          <canvas baseChart [data]="barChartData" [type]="barChartType" [options]="barChartOptions"></canvas>
     </div>
-
 </div>
