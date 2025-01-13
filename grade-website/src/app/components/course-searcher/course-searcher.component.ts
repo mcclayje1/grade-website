@@ -41,25 +41,25 @@ export class CourseSearcherComponent implements OnInit {
     }
   }
 
-  sortData(sortString: string) {
-    // Convert the object into an array of entries
-    const entries = Object.entries(this.gradeData);
+  // sortData(sortString: string) {
+  //   // Convert the object into an array of entries
+  //   const entries = Object.entries(this.gradeData);
 
-    // Sort the array based on avgGPA
-    entries.sort((a: any, b: any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
+  //   // Sort the array based on avgGPA
+  //   entries.sort((a: any, b: any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
 
-    // Convert the array back into an object
-    return Object.fromEntries(entries);
-  }
+  //   // Convert the array back into an object
+  //   return Object.fromEntries(entries);
+  // }
 
-  sortByAvgGPA(data) {
-    const sortedEntries = Object.entries(this.gradeData).sort((a:any, b:any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
-    return new Map(sortedEntries);
-  }
+  // sortByAvgGPA(data) {
+  //   const sortedEntries = Object.entries(this.gradeData).sort((a:any, b:any) => b[1]?.overview?.avgGPA - a[1]?.overview?.avgGPA);
+  //   return new Map(sortedEntries);
+  // }
 
-  sortTable(sortString: string) {
-    // let sorted = this.sortData(sortString)
-    // console.log("sorted: ", sorted)
-    // this.gradeData = sorted
-  } 
+  // sortTable(sortString: string) {
+  //   // let sorted = this.sortData(sortString)
+  //   // console.log("sorted: ", sorted)
+  //   // this.gradeData = sorted
+  // } 
 }
